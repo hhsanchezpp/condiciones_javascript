@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <title>Condiciones JS</title>
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-title">
+            CondicionesJS
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="marcodelaimagen.html">Cambio borde</a>
+          <a href="ticket.html" >Ticket</a>
+          <a href="password.html">Password</a>
+        </div>
+      </div>
+</head>
+<body>
+    <main>
+        <h1 id="titulo_ticket">Solamente, 10 Ticket total</h1>
+        <div id="container_ticket">
+            <div id="peli_ticket_one">
+                <img id="ticket" src="./assets/imgs/indian.jpg" alt="Indian">
+                <br>
+                <input type="number" id="num_1" placeholder="ingrese un numero" min="0" value="0" pattern="^[1-9]\d*$"/>
+            </div>
+            <div id="peli_ticket_two">
+                <img id="ticket" src="./assets/imgs/malboroman.jpg" alt="Malboroman">
+                <br>
+                <input type="number" id="num_2" placeholder="ingrese un numero" min="0" value="0" pattern="^[1-9]\d*$"/>
+            </div>
+            <div id="peli_ticket_three">
+                <img id="ticket" src="./assets/imgs/furiaen2ruedas.jpg" alt="furiaen2ruedas">
+                <br>
+                <input type="number" id="num_3" placeholder="ingrese un numero" min="0" value="0" pattern="^[1-9]\d*$"/>
+            </div>
+        </div>
+        <span id="boton_ticket"></span>
+        <button onclick="calcular()" type="button" id="calcular_ticket">Calcular</button>
+    </main>
+<script src="./assets/js/ticket.js"></script>
+</body>
+</html>
